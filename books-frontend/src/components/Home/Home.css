@@ -1,0 +1,66 @@
+.Home {
+  margin: 1rem;
+}
+
+/*Loader*/
+.Home__Loader {
+  display: flex;
+  justify-content: center;
+}
+
+/* Cards */
+.Home__bookImg {
+  max-height: 300px;
+  object-position: center;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.Home__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: flex-start;
+}
+.Home__container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.Home__container:hover {
+  transform: translateY(-0.25em);
+  box-shadow: 0 0.5em 0.5em -0.4em #025039;
+}
+.Home__containerInformation {
+  padding: 2px 16px;
+}
+.Home__containerFooter {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.Home__containerFooter__Btns {
+  padding: 2px 16px;
+  background: linear-gradient(
+    190deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-color: rgba(236, 31, 31, 0);
+  border-radius: 20em;
+  color: #000000;
+  font-size: 1em;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.Home__containerFooter__Btns:hover {
+  background: linear-gradient(
+    190deg,
+    rgb(58, 141, 180) 0%,
+    rgb(253, 193, 29) 50%,
+    rgb(218, 252, 69) 100%
+  );
+}

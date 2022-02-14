@@ -1,0 +1,47 @@
+.Header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #090815;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color: white;
+  font-size: 2rem;
+  justify-content: space-between;
+}
+
+.Header__logoImg {
+  width: 40px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 5px;
+}
+.Header__navbar {
+  margin-right: 4rem;
+}
+.Header__create_btn {
+  margin-right: 1rem;
+  padding: 2px 16px;
+  background: linear-gradient(
+    190deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-color: rgba(236, 31, 31, 0);
+  border-radius: 20em;
+  color: #000000;
+  font-size: 1em;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .Header {
+    flex-direction: column;
+  }
+  .Header__navbar {
+    margin: 0;
+  }
+}

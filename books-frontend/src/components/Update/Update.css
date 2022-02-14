@@ -1,0 +1,53 @@
+.Create__bookForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+form > input {
+  padding: 1rem 2rem;
+  margin: 1rem 2rem;
+}
+form,
+input,
+textarea {
+  border: 2px solid red;
+  background-color: rgb(71, 12, 12);
+  color: white;
+}
+
+.Create__bookForm_btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Create__bookForm_btn {
+  width: 8rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 15%;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  border: 2px solid rgb(160, 4, 4);
+  background-color: red;
+  color: white;
+  transition: all 0.3s ease-out;
+}
+button:hover {
+  border: 2px solid green;
+  background-color: rgb(0, 89, 255);
+  transform: translateY(-2px);
+}
+input:focus,
+textarea:focus {
+  border: 2px solid blue;
+}
